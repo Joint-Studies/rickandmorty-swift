@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F6DB0A1E2C9D0D5A00581168 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F6DB0A1D2C9D0D5A00581168 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F6DB09F92C9D023E00581168 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,32 @@
 		F6DB0A022C9D023E00581168 /* rickandmorty-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rickandmorty-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F6DB0A1A2C9D043900581168 /* Exceptions for "rickandmorty-swift" folder in "rickandmorty-swiftTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Core/Api/ApiService.swift,
+				Core/i18n/Localizable.xcstrings,
+			);
+			target = F6DB09F72C9D023E00581168 /* rickandmorty-swiftTests */;
+		};
+		F6DB0A1B2C9D043900581168 /* Exceptions for "rickandmorty-swift" folder in "rickandmorty-swiftUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Core/Api/ApiService.swift,
+				Core/i18n/Localizable.xcstrings,
+			);
+			target = F6DB0A012C9D023E00581168 /* rickandmorty-swiftUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F6DB09EA2C9D023D00581168 /* rickandmorty-swift */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F6DB0A1A2C9D043900581168 /* Exceptions for "rickandmorty-swift" folder in "rickandmorty-swiftTests" target */,
+				F6DB0A1B2C9D043900581168 /* Exceptions for "rickandmorty-swift" folder in "rickandmorty-swiftUITests" target */,
+			);
 			path = "rickandmorty-swift";
 			sourceTree = "<group>";
 		};
@@ -52,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6DB0A1E2C9D0D5A00581168 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +140,7 @@
 			);
 			name = "rickandmorty-swift";
 			packageProductDependencies = (
+				F6DB0A1D2C9D0D5A00581168 /* Alamofire */,
 			);
 			productName = "rickandmorty-swift";
 			productReference = F6DB09E82C9D023D00581168 /* rickandmorty-swift.app */;
@@ -187,14 +216,18 @@
 				};
 			};
 			buildConfigurationList = F6DB09E32C9D023D00581168 /* Build configuration list for PBXProject "rickandmorty-swift" */;
-			developmentRegion = en;
+			developmentRegion = "pt-BR";
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = F6DB09DF2C9D023D00581168;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F6DB0A1C2C9D0D5A00581168 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F6DB09E92C9D023D00581168 /* Products */;
 			projectDirPath = "";
@@ -328,6 +361,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -384,6 +418,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -554,6 +589,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6DB0A1C2C9D0D5A00581168 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6DB0A1D2C9D0D5A00581168 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6DB0A1C2C9D0D5A00581168 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6DB09E02C9D023D00581168 /* Project object */;
 }
