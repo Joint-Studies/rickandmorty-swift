@@ -4,7 +4,7 @@
 //
 //  Created by Rodrigo Silva on 19/09/24.
 //
-struct CharacterModel: Codable {
+struct CharacterModel: Codable, Identifiable{
     let id: Int
     let name: String
     let status: String

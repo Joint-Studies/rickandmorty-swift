@@ -1,6 +1,54 @@
 {
   "sourceLanguage" : "pt-BR",
   "strings" : {
+    "Characters" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Characters"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personagens"
+          }
+        }
+      }
+    },
+    "CharactersDetailView" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Character Details"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detalhes de personagem"
+          }
+        }
+      }
+    },
+    "Desconhecido" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unknown"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desconhecido"
+          }
+        }
+      }
+    },
     "hello" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -18,8 +66,37 @@
         }
       }
     },
-    "Hello, world!" : {
-
+    "Morto" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dead"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Morto"
+          }
+        }
+      }
+    },
+    "Vivo" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alive"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vivo"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

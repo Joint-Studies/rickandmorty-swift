@@ -11,7 +11,7 @@ class CharactersViewModel: ObservableObject {
     
     let apiService = ApiService()
 
-    func fetchCharacters() async {
+    func fetchCharacters()  {
         apiService.request(endpoint: .characters, responseType: CharacterResponse.self)  { result in
             switch result {
             case .success(let response):
